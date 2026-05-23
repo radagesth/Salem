@@ -1,0 +1,21 @@
+{
+  "name": "Argentina",
+  "code": "ar",
+  "currency": "ARS",
+  "currency_symbol": "$",
+  "currency_format": "$%s",
+  "locale": "es-AR",
+  "timezone": "America/Buenos_Aires",
+  "price_normalizer": {
+    "thousands_sep": ".",
+    "decimal_sep": ",",
+    "symbol": "$"
+  },
+  "default_location": "Buenos Aires",
+  "stores": {},
+  "communes": {
+    "buenos_aires": {"lat": -34.6037, "lng": -58.3816},
+    "cordoba": {"lat": -31.4201, "lng": -64.1888},
+    "rosario": {"lat": -32.9468, "lng": -60.6393}
+  }
+}

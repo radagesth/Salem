@@ -1,0 +1,45 @@
+# SuperOffer - Configuracion YAML
+# Ubicar en el directorio desde donde se ejecuta main.py
+
+# Tiendas habilitadas (opcional: si no se especifica, se usan todas)
+stores:
+  enabled:
+    - jumbo
+    - lider
+    - tottus
+    - falabella
+    - mercadolibre
+    - homecenter
+    - solotodo
+
+# Valores por defecto (anulables por CLI)
+defaults:
+  webhook: ""
+  location: "Santiago"
+  workers: 6
+
+# Umbral de super oferta (% de descuento)
+super_offer_threshold: 30.0
+
+# Notificadores especificos
+notifiers:
+  telegram: ""        # chat_id, requiere TELEGRAM_TOKEN en .env
+  discord: ""         # webhook URL de Discord
+  whatsapp: ""        # numero destino, requiere WHATSAPP_TOKEN en .env
+
+# Scoring: pesos para ranking inteligente
+scoring:
+  price_weight: 0.50
+  discount_weight: 0.25
+  reputation_weight: 0.15
+  availability_weight: 0.10
+
+# Monitor de bajas de precio
+monitor:
+  enabled: false
+  threshold: 10.0    # % de baja para considerar alerta
+
+# Proxy
+proxy:
+  file: ""           # archivo con proxies (uno por linea)
+  list: []           # o lista directa

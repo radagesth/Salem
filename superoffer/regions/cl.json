@@ -1,0 +1,32 @@
+{
+  "name": "Chile",
+  "code": "cl",
+  "currency": "CLP",
+  "currency_symbol": "$",
+  "currency_format": "$%s",
+  "locale": "es-CL",
+  "timezone": "America/Santiago",
+  "price_normalizer": {
+    "thousands_sep": ".",
+    "decimal_sep": ",",
+    "symbol": "$"
+  },
+  "default_location": "Santiago",
+  "stores": {
+    "jumbo": {"location_id": "2001200"},
+    "lider": {"location_id": "57"},
+    "santa_isabel": {"location_id": "2001200"}
+  },
+  "communes": {
+    "santiago": {"lat": -33.4489, "lng": -70.6693},
+    "providencia": {"lat": -33.4254, "lng": -70.6077},
+    "las_condes": {"lat": -33.4167, "lng": -70.5833},
+    "nunoa": {"lat": -33.4578, "lng": -70.6008},
+    "vina_del_mar": {"lat": -33.0246, "lng": -71.5518},
+    "valparaiso": {"lat": -33.0472, "lng": -71.6127},
+    "concepcion": {"lat": -36.8201, "lng": -73.0442},
+    "la_florida": {"lat": -33.5333, "lng": -70.5833},
+    "maipu": {"lat": -33.5167, "lng": -70.7667},
+    "penalolen": {"lat": -33.4833, "lng": -70.5500}
+  }
+}
